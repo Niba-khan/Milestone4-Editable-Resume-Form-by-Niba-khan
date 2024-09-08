@@ -1,4 +1,4 @@
-Milestone 4: Editable Resume (100 Points) 
+"Milestone 4: Editable Resume (100 Points) 
 Objective: 
 Make the generated resume editable after it’s created. 
 Requirements: 
@@ -10,4 +10,4 @@ Scoring Breakdown:
 o Is each section of the resume editable (i.e., can users click and modify content)? 
 o Are changes reflected without requiring a page refresh? 
  TypeScript Code Quality and Logic (40 points): 
-o Is the TypeScript code organized, eAicient, and error-free?  
+o Is the TypeScript code organized, eAicient, and error-free?"

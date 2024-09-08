@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Milestone4: Editable Resume Builder by Niba Khan</h1>
+
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" title="[a-z A-z]{4,30}" placeholder="Enter the Name" id="name" name="name"  required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter the Email" required>
+            <label for="contact">Phone Number:</label>
+            <input type="tel" pattern="[0-9]{10}" title="Enter valid phone number" placeholder="Enter the PhoneNumber"  id="number" name="phone number" required>
+
+            <!--Profile picture section-->
+
+            <label for="profilePicture">Name:</label>
+            <input type="file" id="profilrPicture" name="profilePicture" accept="image/*" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Degree:</label>
+            <input type="text" id="education" name="education" placeholder="Enter the Education"required>
+            <label for="School/Collage">School/Collage:</label>
+            <input type="text" id="school" name="school/collage" placeholder="Enter the school/Collage Name"required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="experience">Job Title:</label>
+            <input type="text" id="experience" name="experience" placeholder="Enter the job Experince"required>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" placeholder="Enter the Company Name" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" placeholder="Enter the Skills"required>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <section id="resumeOutput">
+        <h2>Generated Resume</h2>
+        <div id="resumeContent"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
